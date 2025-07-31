@@ -3,6 +3,6 @@
 
 from modulos import moeda as md
 
-valor = float(input('Digite um valor: R$ '))
-
-print(md.resumo(valor, 1.2, 0.8))
+valor = input('Digite um valor: R$ ')
+n_valor = md.corrige(valor)
+print(md.resumo(n_valor, 35, 22))
