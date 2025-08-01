@@ -3,5 +3,9 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"totvsLanguageServer.welcomePage": false,
+		"totvsLanguageServer.editor.linter.includes": "C:\\Users\\guico\\OneDrive\\Área de Trabalho\\Python\\FATESG\\include"
+	}
 }

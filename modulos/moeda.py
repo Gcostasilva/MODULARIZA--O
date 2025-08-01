@@ -46,11 +46,32 @@ def corrige(vlr):
             vlr = vlr.replace(',', '.')
             
         return float(str(vlr))
-        
-        
+def leiaInt(n):
+    while n.isnumeric() == False:
+        n = input('Digite um número inteiro: ')
+    
+    return int(n)
+
+def leiaReal(n):
+    try:
+        n = float(n)
+    except Exception:
+        while True:
+            try:
+                n = input('Valor inválido. Digite novamente: ')
+            except Exception:
+                pass
+            else:
+                break
+    return corrige(n) 
+
+
 
 #Exercício Python 110: Adicione o módulo moeda.py criado nos desafios anteriores, uma função chamada resumo()
 #que mostre na tela algumas informações geradas pelas funções que já temos no módulo criado até aqui.
+
+#Exercício Python 113: Reescreva a função leiaInt() que fizemos no desafio 104, 
+#incluindo agora a possibilidade da digitação de um número de tipo inválido. Aproveite e crie também uma função leiaFloat() com a mesma funcionalidade.
 
 def resumo(vlr = 0 , aumento = 1.1, reducao = 0.9):
     '''Mostra um resumo do valor com aumento e redução.'''

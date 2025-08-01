@@ -1,0 +1,21 @@
+Exceção	             Causa comum
+ZeroDivisionError	   Divisão por zero (1 / 0)
+ValueError	           Valor inválido para uma operação ou conversão (int("abc"))
+TypeError	           Operação com tipos incompatíveis ("a" + 1)
+IndexError	           Índice fora do alcance em listas, tuplas, etc. (lista[10])
+KeyError	           Chave inexistente em dicionário (dicionario["x"])
+AttributeError         Objeto não tem o atributo acessado (None.upper())
+NameError	           Uso de variável não definida (print(x) sem definir x)
+FileNotFoundError      Arquivo não encontrado ao tentar abrir (open("inexistente.txt"))
+IOError	               Erro geral de entrada/saída (acesso a arquivos, dispositivos, etc.)
+ImportError	           Falha ao importar um módulo existente
+ModuleNotFoundError	   Módulo não encontrado (import inexistente)
+StopIteration	       Fim de um iterador (next() sem mais itens)
+IndentationError       Erro de indentação no código (má formatação de blocos)
+SyntaxError	           Erro de sintaxe (código malformado, como if True print("ok"))
+RuntimeError	       Erro genérico em tempo de execução
+MemoryError       	   Falta de memória para executar uma operação
+RecursionError  	   Recursão muito profunda (chamadas infinitas de função)
+PermissionError	       Sem permissão para acessar arquivo ou recurso (open('/sys/file'))
+UnicodeError	       Erros de codificação/decodificação de texto (encode/decode)
+OverflowError	       Número muito grande para ser representado (math.exp(1000))
